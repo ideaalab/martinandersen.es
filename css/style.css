@@ -467,8 +467,14 @@ main {
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
-  .hero-traces { display: none; }
-  .hero { padding: 48px 0 40px; }
+  .hero { flex-direction: column; padding: 48px 0 40px; }
+  .hero-traces {
+    position: static;
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin: 32px auto 0;
+  }
 }
 
 @media (max-width: 720px) {
