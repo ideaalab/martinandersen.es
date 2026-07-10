@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martín Andersen · electrónica, firmware y web</title>
+  <meta name="description" content="Diseño electrónico, diseño de producto, programación embebida y desarrollo web. Del esquemático al producto final.">
+  <meta property="og:title" content="Martín Andersen">
+  <meta property="og:description" content="Diseño electrónico, diseño de producto, programación embebida y desarrollo web.">
+  <meta property="og:url" content="https://martinandersen.es">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#34c286">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top">MA<span class="logo-sep">://</span>martinandersen.es</a>
+  <div class="header-right">
+    <nav class="site-nav">
+      <a href="#proyectos" data-i18n="nav.projects">proyectos</a>
+      <a href="#opensource">open source</a>
+      <a href="#contacto" data-i18n="nav.contact">contacto</a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" class="active">es</button><span aria-hidden="true">/</span><button type="button" data-lang="en">en</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">// hardware · firmware · 3d · web</p>
+      <h1>Martín Andersen</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Diseño electrónica y producto, programo firmware
+      embebido y aplicaciones web. Del esquemático al producto final.</p>
+      <ul class="chips" aria-label="Disciplinas">
+        <li data-i18n="chip.electronics">electrónica</li>
+        <li data-i18n="chip.product">producto</li>
+        <li data-i18n="chip.embedded">embebido</li>
+        <li data-i18n="chip.3d">diseño 3D</li>
+        <li>web</li>
+      </ul>
+      <div class="terminal" aria-hidden="true">
+        <div class="term-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="term-title">martin@ma:~</span>
+        </div>
+        <div class="term-body">
+          <p><span class="prompt">~$</span> whoami</p>
+          <p class="term-out">martin_andersen · hw / fw / web</p>
+          <p><span class="prompt">~$</span> <span data-i18n="term.make">make producto_final</span></p>
+          <p class="term-out"><span data-i18n="term.chain">esquemático → pcb → firmware → 3d → producto</span> <span class="term-ok">✓</span></p>
+          <p><span class="prompt">~$</span> <span class="cursor"></span></p>
+        </div>
+      </div>
+    </div>
+    <svg class="hero-traces" viewBox="0 0 460 340" aria-hidden="true" focusable="false">
+      <g class="traces" fill="none" stroke-linejoin="round" stroke-linecap="round">
+        <path id="t1" d="M192 122 V85 L167 60 H96"/>
+        <path id="t2" d="M248 122 V85 L273 60 H348"/>
+        <path id="t3" d="M180 156 H145 L125 136 H104"/>
+        <path id="t4" d="M260 142 H278 L296 160 H308"/>
+        <path id="t5" d="M180 184 H155 L135 204 H128"/>
+        <path id="t6" d="M220 218 V258 L240 278 H336"/>
+        <path d="M192 218 V262 L172 282 H70"/>
+        <path d="M220 122 V98"/>
+        <path d="M260 198 H295 L315 218 H424"/>
+      </g>
+      <g class="pins" fill="none">
+        <path d="M192 122 V130 M206 122 V130 M220 122 V130 M234 122 V130 M248 122 V130"/>
+        <path d="M192 210 V218 M206 210 V218 M220 210 V218 M234 210 V218 M248 210 V218"/>
+        <path d="M172 142 H180 M172 156 H180 M172 170 H180 M172 184 H180 M172 198 H180"/>
+        <path d="M260 142 H268 M260 156 H268 M260 170 H268 M260 184 H268 M260 198 H268"/>
+      </g>
+      <rect class="chip-body" x="180" y="130" width="80" height="80" rx="6"/>
+      <circle class="chip-dot" cx="193" cy="143" r="3"/>
+      <text class="chip-label" x="220" y="176">MA</text>
+      <g class="vias">
+        <circle cx="70" cy="282" r="5"/>
+        <circle cx="220" cy="98" r="5"/>
+        <circle cx="424" cy="218" r="5"/>
+      </g>
+      <g class="node">
+        <rect x="18" y="47" width="78" height="26" rx="13"/>
+        <text x="57" y="64" data-i18n="node.hw">hardware</text>
+        <set attributeName="class" to="node lit" begin="sa1.end" dur="0.55s"/>
+      </g>
+      <g class="node">
+        <rect x="348" y="47" width="78" height="26" rx="13"/>
+        <text x="387" y="64" data-i18n="node.fw">firmware</text>
+        <set attributeName="class" to="node lit" begin="sa2.end" dur="0.55s"/>
+      </g>
+      <g class="node">
+        <rect x="16" y="123" width="88" height="26" rx="13"/>
+        <text x="60" y="140" data-i18n="node.d3">diseño 3D</text>
+        <set attributeName="class" to="node lit" begin="sa3.end" dur="0.55s"/>
+      </g>
+      <g class="node">
+        <rect x="308" y="147" width="148" height="26" rx="13"/>
+        <text x="382" y="164" data-i18n="node.prod">diseño de producto</text>
+        <set attributeName="class" to="node lit" begin="sa4.end" dur="0.55s"/>
+      </g>
+      <g class="node">
+        <rect x="18" y="191" width="110" height="26" rx="13"/>
+        <text x="73" y="208" data-i18n="node.p3">impresión 3D</text>
+        <set attributeName="class" to="node lit" begin="sa5.end" dur="0.55s"/>
+      </g>
+      <g class="node">
+        <rect x="336" y="265" width="48" height="26" rx="13"/>
+        <text x="360" y="282" data-i18n="node.web">web</text>
+        <set attributeName="class" to="node lit" begin="sa6.end" dur="0.55s"/>
+      </g>
+      <circle class="signal" cx="0" cy="0" r="3.5" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="0.01s" fill="freeze"/>
+        <animateMotion id="sa1" dur="1.4s" begin="0.8s; sa6.end+0.6s" fill="freeze" rotate="none"><mpath href="#t1"/></animateMotion>
+        <animateMotion id="sa2" dur="1.3s" begin="sa1.end+0.6s" fill="freeze" rotate="none"><mpath href="#t2"/></animateMotion>
+        <animateMotion id="sa3" dur="1.0s" begin="sa2.end+0.6s" fill="freeze" rotate="none"><mpath href="#t3"/></animateMotion>
+        <animateMotion id="sa4" dur="0.8s" begin="sa3.end+0.6s" fill="freeze" rotate="none"><mpath href="#t4"/></animateMotion>
+        <animateMotion id="sa5" dur="1.0s" begin="sa4.end+0.6s" fill="freeze" rotate="none"><mpath href="#t5"/></animateMotion>
+        <animateMotion id="sa6" dur="1.2s" begin="sa5.end+0.6s" fill="freeze" rotate="none"><mpath href="#t6"/></animateMotion>
+      </circle>
+    </svg>
+  </section>
+
+  <section class="section" id="proyectos">
+    <h2><span class="num">01/</span> <span data-i18n="sec.projects">proyectos destacados</span></h2>
+    <div class="cards cards-featured">
+      <a class="card" href="https://www.ideaalab.com" target="_blank" rel="noopener">
+        <div class="card-head">
+          <h3>IDEAA Lab</h3>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p data-i18n="ideaalab.desc">Electrónica, magia e innovación: productos propios, tutoriales
+        y proyectos con mandos a distancia, servos y microcontroladores.</p>
+        <ul class="tags">
+          <li data-i18n="chip.electronics">electrónica</li>
+          <li data-i18n="chip.product">producto</li>
+          <li data-i18n="tag.education">educación</li>
+        </ul>
+      </a>
+      <a class="card" href="https://papatalk.martinandersen.es" target="_blank" rel="noopener">
+        <div class="card-head">
+          <h3>PapaTalk</h3>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p data-i18n="papatalk.desc">App web para comunicarse con personas hospitalizadas que no
+        pueden hablar —intubadas o con dificultades de comunicación verbal—
+        pero que conservan movilidad en las manos.</p>
+        <ul class="tags">
+          <li>web</li>
+          <li data-i18n="tag.accessibility">accesibilidad</li>
+          <li data-i18n="tag.health">salud</li>
+        </ul>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="opensource">
+    <h2><span class="num">02/</span> open source</h2>
+    <p class="section-note"><span data-i18n="os.note">Cargado en vivo desde</span>
+      <a href="https://github.com/ideaalab" target="_blank" rel="noopener">github.com/ideaalab</a></p>
+
+    <div class="repo-group">
+      <h3 class="group-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 6V3M15 6V3M9 21v-3M15 21v-3M6 9H3M6 15H3M21 9h-3M21 15h-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="ccs.title">librerías CCS</span>
+      </h3>
+      <p class="group-sub" data-i18n="ccs.sub">Librerías en C de CCS para microcontroladores PIC</p>
+      <div class="cards repo-grid" data-topic="ccs-library"></div>
+    </div>
+
+    <div class="repo-group">
+      <h3 class="group-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-5h-4v5H5a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Home Assistant
+      </h3>
+      <p class="group-sub" data-i18n="ha.sub">Componentes e integraciones para Home Assistant</p>
+      <div class="cards repo-grid" data-topic="ha-addon"></div>
+    </div>
+
+    <div class="repo-group">
+      <h3 class="group-title">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.5 9h5M14 9h5.5M9 9l3 9M15 9l-3 9M12 18l-2.5-7M12 18l2.5-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span data-i18n="wp.title">plugins WordPress</span>
+      </h3>
+      <p class="group-sub" data-i18n="wp.sub">Plugins para WordPress y WooCommerce</p>
+      <div class="cards repo-grid" data-topic="wp-plugin"></div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2><span class="num">03/</span> <span data-i18n="sec.contact">contacto</span></h2>
+    <div class="contact-links">
+      <a href="https://github.com/ideaalab" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.8a10.2 10.2 0 0 0-3.22 19.88c.51.09.7-.22.7-.49v-1.72c-2.84.62-3.44-1.37-3.44-1.37-.46-1.18-1.13-1.5-1.13-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.56 2.39 1.11 2.97.85.09-.66.36-1.11.65-1.37-2.27-.26-4.65-1.13-4.65-5.04 0-1.11.4-2.02 1.05-2.74-.1-.26-.46-1.3.1-2.7 0 0 .86-.28 2.8 1.05a9.7 9.7 0 0 1 5.1 0c1.95-1.33 2.8-1.05 2.8-1.05.56 1.4.2 2.44.1 2.7.65.72 1.05 1.63 1.05 2.74 0 3.92-2.39 4.78-4.66 5.03.37.32.69.94.69 1.9v2.81c0 .27.19.59.7.49A10.2 10.2 0 0 0 12 1.8z"/></svg>
+        github.com/ideaalab
+      </a>
+      <a href="https://www.ideaalab.com" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c-5 5.5-5 12.5 0 18M12 3c5 5.5 5 12.5 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        ideaalab.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year">2026</span> Martín Andersen</span>
+  <span class="footer-note" data-i18n="footer.note">hecho a mano — sin frameworks, sin cookies</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
